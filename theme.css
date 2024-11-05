@@ -64,6 +64,44 @@ settings:
       -
         label: Heading 6
         value: doc-title-h6
+  -
+    id: horizontal-rule-color
+    title: Horizontal Rule Color
+    description: Change the color of the horizontal rule created with --- or <hr>.
+    type: class-select
+    allowEmpty: false
+    default: horizontal-rule-orange
+    options:
+      -
+        label: Accent Color (hue)
+        value: horizontal-rule-accent
+      -
+        label: Rainbow
+        value: horizontal-rule-rainbow
+      -
+        label: Red
+        value: horizontal-rule-red
+      -
+        label: Orange
+        value: horizontal-rule-orange
+      -
+        label: Yellow
+        value: horizontal-rule-yellow
+      -
+        label: Green
+        value: horizontal-rule-green
+      -
+        label: Blue
+        value: horizontal-rule-blue
+      -
+        label: Purple
+        value: horizontal-rule-purple
+      -
+        label: Purple-Pink
+        value: horizontal-rule-purple-pink
+      -
+        label: Pink
+        value: horizontal-rule-pink
 */
 
 /** Embedded Fonts **/
@@ -478,6 +516,55 @@ strong > em {
 .cm-strikethrough,
 del {
   color: var(--on-layer-400);
+}
+
+/*-Horizontal Rule-*/
+body.horizontal-rule-accent .el-hr hr,
+body.horizontal-rule-accent .cm-html-embed hr,
+body.horizontal-rule-accent .hr hr {
+  --hr-color: none;
+  border-image: var(--accent-gradient);
+  border-image-slice: 1;
+}
+
+body.horizontal-rule-rainbow .el-hr hr,
+body.horizontal-rule-rainbow .cm-html-embed hr,
+body.horizontal-rule-rainbow .hr hr {
+  --hr-color: none;
+  border-image: var(--rainbow-gradient);
+  border-image-slice: 1;
+}
+
+body.horizontal-rule-red {
+  --hr-color: var(--red);
+}
+
+body.horizontal-rule-orange {
+  --hr-color: var(--orange);
+}
+
+body.horizontal-rule-yellow {
+  --hr-color: var(--yellow);
+}
+
+body.horizontal-rule-green {
+  --hr-color: var(--green);
+}
+
+body.horizontal-rule-blue {
+  --hr-color: var(--blue);
+}
+
+body.horizontal-rule-purple {
+  --hr-color: var(--purple);
+}
+
+body.horizontal-rule-purple-pink {
+  --hr-color: var(--purple-pink);
+}
+
+body.horizontal-rule-pink {
+  --hr-color: var(--pink);
 }
 
 /*--Headers/Headings--*/
