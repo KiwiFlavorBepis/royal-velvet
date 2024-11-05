@@ -343,6 +343,28 @@ body {
   --hr-color: var(--orange); /* Horizontal Line */
 
   --checkbox-color-hover: var(--list-marker-color); /* Overrides checkbox list level 7+ hover */
+
+  --rainbow-gradient: linear-gradient(
+    var(--gradientDegree),
+    var(--pink) 0,
+    var(--orange) 8.33%,
+    var(--yellow) 16.66%,
+    var(--green) 25%,
+    var(--blue) 33.33%,
+    var(--purple) 41.66%,
+    var(--pink) 50%,
+    var(--orange) 58.33%,
+    var(--yellow) 66.66%,
+    var(--green) 75%,
+    var(--blue) 83.33%,
+    var(--purple) 91.66%,
+    var(--pink) 100%
+  );
+  --accent-gradient: linear-gradient(
+    var(--gradientDegree),
+    hsl(calc(var(--accent-h) + 30), var(--primary-sat), var(--primary-lit)),
+    hsl(calc(var(--accent-h) - 30), var(--primary-sat), var(--primary-lit))
+  );
 }
 
 /*Setting Dropdown*/
