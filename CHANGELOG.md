@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.11.8
+
+- fixed: spell check errors in document title causing gradients to disappear as well
+
+## 0.11.7
+
+- fixed: spell check errors in headings cause gradients to disappear (#48)
+
+## 0.11.6
+
+- fixed: Fira font family was no longer used throughout the app
+
+## 0.11.5
+
+- improve styling of level 7+ checkboxes (#46), thanks [KiwiFlavorBepis](https://github.com/KiwiFlavorBepis)
+
 ## 0.11.4
 
 ### Fixed (Developer)
